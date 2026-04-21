@@ -1,28 +1,28 @@
 # Automated Apply Public
 
-Bot local e auditavel para descobrir vagas em sites publicos de empresas, filtrar oportunidades elegiveis na Italia e Irlanda e apoiar o preenchimento assistido de formularios com revisao humana.
+Local, auditable automation for discovering jobs on public company career pages, filtering eligible roles in Italy and Ireland, and supporting assisted form filling with human review.
 
-## Escopo
+## Scope
 
-- busca vagas em paginas publicas e ATS conhecidos;
-- aceita vagas remotas na Italia ou Irlanda;
-- aceita vagas presenciais ou hibridas apenas na Irlanda;
-- restringe moedas a EUR ou USD quando a pagina informar pagamento;
-- gera curriculos adaptados apenas com base em evidencia local do candidato;
-- bloqueia envio automatico quando houver baixa confianca, campo desconhecido ou falta de revisao humana.
+- searches public career pages and known ATS platforms;
+- accepts remote roles in Italy or Ireland;
+- accepts onsite or hybrid roles only in Ireland;
+- restricts salary currencies to EUR or USD when compensation is listed;
+- generates tailored resumes only from grounded local candidate evidence;
+- blocks automatic submission when confidence is low, fields are unknown, or human review is still required.
 
-## Publicacao Segura
+## Safe Publication
 
-Esta copia publica nao inclui:
+This public copy does not include:
 
-- perfil real do candidato;
-- inventario real de experiencias;
-- lista operacional de empresas-alvo;
-- notas locais de reputacao;
-- links coletados em runtime;
-- curriculos, anexos, banco local, caches e perfis de navegador.
+- the candidate's real profile;
+- the real experience inventory;
+- the operational list of target companies;
+- local reputation notes;
+- runtime-collected job links;
+- resumes, attachments, local databases, caches, or browser profiles.
 
-Os arquivos mutaveis do usuario devem ser criados localmente a partir dos templates em `data/`.
+User-specific files must be created locally from the templates in `data/`.
 
 ## Setup
 
@@ -33,9 +33,9 @@ python -m pip install -e .
 python -m playwright install chromium
 ```
 
-## Configuracao
+## Configuration
 
-Crie localmente estes arquivos a partir dos templates:
+Create these files locally from the templates:
 
 - `data/candidate_profile.yaml`
 - `data/experience_inventory.yaml`
@@ -44,7 +44,7 @@ Crie localmente estes arquivos a partir dos templates:
 - `data/blacklist.yaml`
 - `data/sample_posts.json`
 
-## Comandos
+## Commands
 
 ```powershell
 python -m app.main init-db
@@ -55,9 +55,9 @@ python -m app.main apply --mode fill_only
 python -m unittest discover -s tests
 ```
 
-## Estrutura
+## Structure
 
-- `app/`: automacao, extracao, classificacao, preenchimento e persistencia.
-- `scripts/`: atalhos locais para scan, aplicacao e uso do Claude CLI.
-- `tests/`: cobertura de regras deterministicas, extracao e runtime seguro.
-- `data/`: somente templates publicos; arquivos reais ficam ignorados pelo Git.
+- `app/`: automation, extraction, classification, autofill, and persistence.
+- `scripts/`: local shortcuts for scanning, applying, and Claude CLI usage.
+- `tests/`: coverage for deterministic rules, extraction, and safe runtime behavior.
+- `data/`: public templates only; real user files are ignored by Git.
