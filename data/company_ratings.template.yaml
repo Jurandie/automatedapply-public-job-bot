@@ -1,0 +1,7 @@
+settings:
+  provider: glassdoor
+  minimum_rating: 3.5
+  require_verified_rating: true
+  max_age_days: 120
+
+ratings: []

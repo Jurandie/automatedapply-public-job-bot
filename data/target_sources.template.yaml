@@ -1,0 +1,26 @@
+company_sources:
+  target_countries:
+    - Italy
+    - Ireland
+  companies:
+    - name: ""
+      country: "Ireland"
+      careers_url: ""
+      tags: ["backend", "python"]
+
+web_search:
+  ats_domains:
+    - jobs.lever.co
+    - boards.greenhouse.io
+    - job-boards.greenhouse.io
+    - jobs.ashbyhq.com
+    - apply.workable.com
+    - jobs.smartrecruiters.com
+    - jobs.personio.com
+    - recruitee.com
+    - comeet.com
+
+linkedin_sources:
+  companies: []
+  people: []
+  search_terms: []

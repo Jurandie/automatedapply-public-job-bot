@@ -1,0 +1,40 @@
+basics:
+  headline: ""
+  summary: ""
+
+skills:
+  - name: Python
+    aliases: ["python"]
+
+experiences:
+  - id: exp-example
+    company: ""
+    title: ""
+    skills: ["python", "automation"]
+    bullets:
+      - id: exp-example-1
+        text: ""
+        skills: ["python"]
+
+projects:
+  - id: proj-example
+    name: ""
+    skills: ["python"]
+    bullets:
+      - id: proj-example-1
+        text: ""
+        skills: ["python"]
+
+education:
+  - id: edu-example
+    name: ""
+    institution: ""
+    start: ""
+    end: ""
+
+certifications: []
+
+constraints:
+  never_claim:
+    - "Do not claim senior leadership, staff, principal, architect, manager, head, or director experience."
+    - "Do not claim technologies, metrics, or durations that are not grounded in this inventory."

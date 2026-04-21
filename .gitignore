@@ -1,0 +1,45 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+*.egg-info/
+build/
+dist/
+*.spec
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+*.log
+
+# Local browser and runtime state
+playwright-profile/
+google-chrome-control-profile/
+data/runtime/
+data/screenshots/
+data/tmp/
+.tmp-test/
+
+# Private candidate and target configuration
+data/candidate_profile.yaml
+data/experience_inventory.yaml
+data/target_sources.yaml
+data/company_ratings.yaml
+data/blacklist.yaml
+data/sample_posts.json
+
+# Personal application artifacts
+*.pdf
+*.doc
+*.docx
+*.zip
+*.html
+*.txt
+
+# Local secrets and environment overrides
+.env
+.env.*

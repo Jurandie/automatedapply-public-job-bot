@@ -1,0 +1,40 @@
+name: ""
+email: ""
+phone: ""
+location: "Ireland"
+visa_status: ""
+linkedin: ""
+github: ""
+portfolio: ""
+cv_path: ""
+
+resume_tailoring:
+  enabled: true
+  experience_inventory_path: "data/experience_inventory.yaml"
+  output_dir: "data/runtime/resumes"
+  minimum_matched_evidence: 2
+  use_tailored_resume_for_upload: false
+
+preferences:
+  roles:
+    - Python Developer
+    - Backend Engineer
+    - Automation Engineer
+    - Data Engineer
+  seniority:
+    - junior
+    - pleno
+  remote_only: true
+  allow_onsite_countries:
+    - Ireland
+  allowed_countries:
+    - Italy
+    - Ireland
+  allowed_currencies:
+    - EUR
+    - USD
+  excluded_keywords:
+    - unpaid
+    - internship
+    - volunteer
+    - commission only

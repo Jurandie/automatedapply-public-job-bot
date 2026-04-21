@@ -1,0 +1,17 @@
+[
+  {
+    "source_url": "manual-sample-company-site",
+    "company": "Example Italia Tech",
+    "post_text": "Job title: Junior Python Backend Engineer. Location: Milan, Italy. Remote within Italy. Salary EUR 45000-55000."
+  },
+  {
+    "source_url": "manual-sample-company-site",
+    "company": "Example Ireland Automation",
+    "post_text": "Open role: Pleno Automation Engineer hybrid in Dublin, Ireland."
+  },
+  {
+    "source_url": "manual-sample-company-site",
+    "company": "Non Target Example",
+    "post_text": "Hiring Junior Backend Developer remote Germany."
+  }
+]
